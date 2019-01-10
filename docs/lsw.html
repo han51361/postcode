@@ -29,7 +29,7 @@
   };
   
   function postMessageToiOS(postZone, postCode, postAddress) {
-    alert('testttttt')
+    
   
       window.TestApp.setAddress(postZone , postCode, postAddress);
   };
@@ -80,7 +80,7 @@
             zonecode : data.zonecode,
             addr : fullRoadAddr
         };
-        
+        console.log(data.postcode,data.zonecode,data.fullRoadAddr);
         window.postMessageToiOS(data.postcode,data.zonecode,data.fullRoadAddr);
         alert('p2');
       },
