@@ -28,8 +28,8 @@
     console.log("onReceivedActivityMessageViaJavascriptInterface "+event);
   };
   
-  function postMessageToiOS(postData) {
-      window.TestApp.setAddress.postMessage(postData);
+  function postMessageToiOS(postZone, postCode, postAddress) {
+      window.TestApp.setAddress.postMessage(postZone , postCode, postAddress);
   };
   
   var element_layer = document.getElementById('layer');
@@ -79,7 +79,7 @@
             addr : fullRoadAddr
         };
         
-        window.postMessageToiOS(postData);
+        window.postMessageToiOS(data.postcode,data.zonecode,data.fullRoadAddr);
       },
       width : '100%',
       height : '100%'
