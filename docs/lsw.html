@@ -40,7 +40,7 @@
         
         var fullAddr = data.address; // 최종 주소 변수
         var extraAddr = ''; // 조합형 주소 변수
-        
+       
         if(data.addressType === 'R'){
           
           if(data.bname !== ''){
@@ -78,8 +78,9 @@
             zonecode : data.zonecode,
             addr : fullRoadAddr
         };
-        
+        alert("p1");
         window.postMessageToiOS(data.postcode,data.zonecode,data.fullRoadAddr);
+        alert("p2");
       },
       width : '100%',
       height : '100%'
