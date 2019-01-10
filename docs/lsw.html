@@ -80,8 +80,8 @@
             zonecode : data.zonecode,
             addr : fullRoadAddr
         };
-        console.log(data.postcode,data.zonecode,data.fullRoadAddr);
-        window.postMessageToiOS(data.postcode,data.zonecode,data.fullRoadAddr);
+        console.log(data.postcode,data.zonecode,fullRoadAddr);
+        window.postMessageToiOS(data.postcode,data.zonecode,fullRoadAddr);
         alert('p2');
       },
       width : '100%',
