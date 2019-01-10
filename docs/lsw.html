@@ -29,7 +29,7 @@
   };
   
   function postMessageToiOS(postZone, postCode, postAddress) {
-      window.TestApp.setAddress.postMessage(postZone , postCode, postAddress);
+      window.TestApp.AndroidBridge.setAddress.postMessage(postZone , postCode, postAddress);
   };
   
   var element_layer = document.getElementById('layer');
